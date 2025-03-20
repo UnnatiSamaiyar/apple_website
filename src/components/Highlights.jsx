@@ -3,13 +3,11 @@ import gsap from "gsap";
 import { rightImg, watchImg } from "../utils";
 import VideoCarousel from "./VideoCarousel";
 
-
 const Highlights = () => {
-
- useGSAP(() => {
-  gsap.to('#title', {opacity: 1, y:0})
-  gsap.to('.link', {opacity:1, y:0, duration: 1, stagger: 0.25})
- }, [])
+  useGSAP(() => {
+    gsap.to("#title", { opacity: 1, y: 0 });
+    gsap.to(".link", { opacity: 1, y: 0, duration: 1, stagger: 0.25 });
+  }, []);
   return (
     <section
       id="highlights"
@@ -23,11 +21,11 @@ const Highlights = () => {
           <div className="flex flex-wrap items-end gap-5">
             <p className="link">
               Watch the film
-              <img src={watchImg} alt="watch"/>
+              <img src={watchImg} alt="watch" className="ml-2" />
             </p>
             <p className="link">
               Watch the event
-              <img src={rightImg} alt="watch"/>
+              <img src={rightImg} alt="watch" className="ml-2" />
             </p>
           </div>
         </div>
